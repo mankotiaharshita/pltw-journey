@@ -399,6 +399,8 @@ background:#ffdce9;
 
 padding:60px;
 
+padding-right:280px;
+
 position:relative;
 
 background-image:
@@ -517,7 +519,7 @@ margin-bottom:12px;
 
 display:grid;
 
-grid-template-columns:repeat(2,1fr);
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
 
 gap:35px;
 
@@ -743,15 +745,15 @@ ABOUT PHOTO
 
 .about-header{
 
-display:grid;
+display:flex;
 
-grid-template-columns:1fr 260px;
+align-items:flex-start;
 
-gap:35px;
+justify-content:space-between;
 
-align-items:start;
+gap:30px;
 
-margin-bottom:30px;
+margin-bottom:20px;
 
 }
 
@@ -759,17 +761,19 @@ margin-bottom:30px;
 
 flex:1;
 
+min-width:0;
+
 }
 
 .about-photo{
 
-width:270px;
+width:230px;
 
-height:320px;
-
-padding:12px;
+flex-shrink:0;
 
 background:white;
+
+padding:12px;
 
 border-radius:22px;
 
@@ -779,19 +783,19 @@ transform:rotate(4deg);
 
 position:relative;
 
-flex-shrink:0;
-
 }
 
 .about-photo img{
 
 width:100%;
 
-height:100%;
+height:auto;
 
-object-fit:cover;
+display:block;
 
 border-radius:16px;
+
+object-fit:cover;
 
 }
 
@@ -801,7 +805,7 @@ content:"";
 
 position:absolute;
 
-top:-10px;
+top:-8px;
 
 left:50%;
 
@@ -928,15 +932,21 @@ font-size:2rem;
 }
 
 .about-header{
+
 grid-template-columns:1fr;
+
 text-align:center;
+
 }
 
 .about-photo{
+
+margin:25px auto;
+
 width:220px;
-height:260px;
-margin:0 auto 25px;
-transform:none;
+
+transform:rotate(3deg);
+
 }
 
 .sticky{
@@ -1037,5 +1047,67 @@ footer{
 padding:40px 20px;
 text-align:center;
 }
+
+}
+
+/* ===========================
+PDF PROJECT CARDS
+=========================== */
+
+.project{
+
+text-decoration:none;
+
+color:inherit;
+
+cursor:pointer;
+
+transition:.25s;
+
+}
+
+.project:hover{
+
+transform:translateY(-10px);
+
+border-color:var(--pink);
+
+box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+.project p{
+
+margin-top:12px;
+
+text-align:center;
+
+font-size:.95rem;
+
+color:var(--pink);
+
+font-weight:700;
+
+}
+
+.pdf-project::before{
+
+content:"📄 PDF";
+
+display:inline-block;
+
+margin-bottom:14px;
+
+padding:6px 12px;
+
+border-radius:999px;
+
+background:var(--light-pink);
+
+color:var(--pink);
+
+font-size:.8rem;
+
+font-weight:700;
 
 }
