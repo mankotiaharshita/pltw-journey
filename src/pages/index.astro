@@ -1,17 +1,229 @@
 ---
-
+import "../styles/global.css";
+import Hero from "../components/Hero.astro";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My PLTW Journey</title>
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+
+⚙️ HM
+
+</div>
+
+<div class="links">
+
+<a href="#about">About</a>
+
+<a href="#stats">Stats</a>
+
+<a href="#courses">Courses</a>
+
+</div>
+
+</nav>
+
+<Hero />
+
+<section id="about" class="about">
+
+<div class="notebook">
+
+<div class="margin"></div>
+
+<div class="content">
+
+<div class="about-header">
+
+<div class="about-text">
+
+<span class="section-tag">ABOUT ME</span>
+
+<h2>Hi, I'm Harshita!</h2>
+
+<p class="intro">
+
+I'm an incoming Mechanical Engineering student at St. Ambrose University who plans to become a Technology & Engineering Education teacher. PLTW completely changed how I think about engineering—not because every project went perfectly, but because almost none of them did.
+
+</p>
+
+</div>
+
+<div class="about-photo">
+
+<img src="/images/about/about-me.jpg" alt="Harshita">
+
+</div>
+
+</div>
+
+<ul>
+
+<li>Incoming Mechanical Engineering Student • St. Ambrose University</li>
+
+<li>Future Technology & Engineering Education Teacher</li>
+
+<li>FTC Team #7196 — Everything That's Radical</li>
+
+<li>FRC Team #9082 — No Limit Robotics</li>
+
+<li>Iowa FIRST Student Leadership Board</li>
+
+<li>IGYSAC Collegiate Mentor</li>
+
+<li>Completed all five PLTW courses offered at Pleasant Valley High School</li>
+
+<li>IED EOC: 410</li>
+
+<li>POE EOC: 390</li>
+
+<li>500+ CAD Hours</li>
+
+</ul>
+
+<div class="sticky">
+
+💗 Favorite Class:
+<br><br>
+IED
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="stats">
+
+<span class="section-tag">
+
+AT A GLANCE
+
+</span>
+
+<h2>Numbers Behind My Journey</h2>
+
+<div class="stats-grid">
+
+<div class="stat stat-hover">
+
+<h3>5</h3>
+
+<p>PLTW Courses</p>
+
+<div class="hover-info">
+
+Introduction to Engineering Design<br>
+
+Principles of Engineering<br>
+
+Civil Engineering & Architecture<br>
+
+Engineering Problems<br>
+
+Principles of Biomedical Science
+
+</div>
+
+</div>
+
+<div class="stat">
+
+<h3>500+</h3>
+
+<p>Hours of CAD</p>
+
+</div>
+
+<div class="stat">
+
+<h3>3</h3>
+
+<p>EOC Exams</p>
+
+</div>
+
+<div class="stat">
+
+<h3>3</h3>
+
+<p>Years in FIRST</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="courses">
+
+<span class="section-tag">
+
+COURSES
+
+</span>
+
+<h2>
+
+Explore My Classes
+
+</h2>
+
+<div class="course-grid">
+
+<a class="course-card" href="/engineering/ied">
+
+<h3>Introduction to Engineering Design</h3>
+
+<p>Where I learned to think like an engineer.</p>
+
+</a>
+
+<a class="course-card" href="/engineering/poe">
+
+<h3>Principles of Engineering</h3>
+
+<p>Programming, teamwork, and robotics.</p>
+
+</a>
+
+<a class="course-card" href="/engineering/cea">
+
+<h3>Civil Engineering & Architecture</h3>
+
+<p>Designing homes and solving client needs.</p>
+
+</a>
+
+<a class="course-card" href="/engineering/engineering-problems">
+
+<h3>Engineering Problems</h3>
+
+<p>Real engineering competitions and challenges.</p>
+
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+Made with 💗 by Harshita
+
+</footer>
+
+</body>
+
 </html>
